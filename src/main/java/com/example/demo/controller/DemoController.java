@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.service.UserService;
-import netscape.javascript.JSObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +16,7 @@ public class DemoController {
     UserService userService;
     @RequestMapping("index")
     public String demo(){
-        return  "hello";
+        return "hello";
     }
     @RequestMapping("mybatis/test.do")
     @ResponseBody
